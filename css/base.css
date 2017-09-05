@@ -1,0 +1,58 @@
+/* 为了方便写通配符 */
+* {
+  margin: 0px;
+  padding: 0px;
+  /* 让盒模型的计算方式 包含边框和padding  避免设置宽度100% 边框和padding增加盒子的宽度造成出滚动条*/
+  box-sizing: border-box;
+  /* 在移动端标签按住的时候会出现一个浅蓝色的背景色： 点击高亮颜色 */
+  -webkit-tap-highlight-color: transparent;
+}
+body {
+  font-family: '微软雅黑';
+}
+ul,
+ol {
+  list-style: none !important ;
+  margin: 0;
+}
+a {
+  text-decoration: none !important;
+  color: #ccc;
+}
+img {
+  /* 去除图片距离div底部3px的间距 */
+  vertical-align: bottom;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+.w1 {
+  width: 1000px;
+  margin: auto;
+}
+.W {
+  margin: auto;
+  width: 1200px;
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.bl {
+  border-left: 1px solid #ccc;
+}
+.br {
+  border-right: 1px solid #ccc;
+}
+.bt {
+  border-top: 1px solid #ccc;
+}
+.bb {
+  border-bottom: 1px solid #ccc;
+}
+a {
+  text-decoration: none;
+}
